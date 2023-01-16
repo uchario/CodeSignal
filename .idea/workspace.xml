@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="798b0b56-e230-481b-ae85-396b5dbb721c" name="Changes" comment="feat: add make array consecutive from CodeSignal">
+    <list default="true" id="798b0b56-e230-481b-ae85-396b5dbb721c" name="Changes" comment="feat: add &quot;centuryFromYear&quot; method">
+      <change afterPath="$PROJECT_DIR$/src/checkpalindrome/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -57,11 +58,27 @@
       <option name="project" value="LOCAL" />
       <updated>1673836014710</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="feat: add &quot;add&quot; method">
+      <created>1673851078871</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1673851078871</updated>
+    </task>
+    <task id="LOCAL-00003" summary="feat: add &quot;centuryFromYear&quot; method">
+      <created>1673851479175</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1673851479175</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="feat: add make array consecutive from CodeSignal" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: add make array consecutive from CodeSignal" />
+    <MESSAGE value="feat: add &quot;add&quot; method" />
+    <MESSAGE value="feat: add &quot;centuryFromYear&quot; method" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: add &quot;centuryFromYear&quot; method" />
   </component>
 </project>
