@@ -45,4 +45,8 @@ public class Main {
         }
         return year/100;
     }
+
+    public static int yuvalScharfSolution(int year) {
+        return 1 + (year - 1) / 100;
+    }
 }
