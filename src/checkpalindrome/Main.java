@@ -48,4 +48,8 @@ public class Main {
         }
         return false;
     }
+
+    public static boolean mminellaSolution(String inputString) {
+        return inputString.equals(new StringBuilder(inputString).reverse().toString());
+    }
 }
