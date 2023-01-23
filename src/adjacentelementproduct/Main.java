@@ -1,5 +1,7 @@
 package adjacentelementproduct;
 
+import java.util.stream.IntStream;
+
 public class Main {
     public static void main(String[] args) {
         int[] inputArray = {3, 6, -2, -5, 7, 3};
@@ -55,5 +57,12 @@ public class Main {
             }
         }
         return greatest;
+    }
+
+    public static int bandorthildSolution(int[] inputArray) {
+        return IntStream.range(1, inputArray.length)
+                .map(i -> inputArray[i] * inputArray[i-1])
+                .max()
+                .getAsInt();
     }
 }
