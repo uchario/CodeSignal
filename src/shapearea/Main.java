@@ -49,4 +49,8 @@ public class Main {
         int result =  4 * (n - 1) + shapeArea(n - 1);
         return result;
     }
+
+    public static int yeshuaNarvaezSolution(int n) {
+        return (n*n)+( (n-1)*(n-1) );
+    }
 }
