@@ -50,4 +50,10 @@ public class Main {
         }
         System.out.println(counter);
     }
+
+    public static int dhruvilSolution(int[] a) {
+        Arrays.sort(a);
+        int n = a[a.length-1] - a[0];
+        return n - a.length + 1;
+    }
 }
