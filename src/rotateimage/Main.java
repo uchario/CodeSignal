@@ -7,7 +7,7 @@ public class Main {
        int[][] a = {{1, 2, 3},
                     {4, 5, 6},
                     {7, 8, 9}};
-       System.out.println(Arrays.toString(rotateImage(a)));
+       System.out.println(Arrays.toString(evan_v11Solution(a)));
     }
 
     public static int[][] rotateImage(int[][] a) {
@@ -59,5 +59,19 @@ public class Main {
             }
         }
         return newArray;
+    }
+
+    public static int[][] evan_v11Solution(int[][] a) {
+        int n = a.length;
+        for(int i = 0; i < n / 2; i++){
+            for(int j = i; j < n-i-1; j++){
+                int temp = a[i][j];
+                a[i][j] = a[n-j-1][i];
+                a[n-j-1][i] = a[n-1-i][n-1-j];
+                a[n-1-i][n-1-j] = a[j][n-1-i];
+                a[j][n-1-i] = temp;
+            }
+        }
+        return a;
     }
 }
