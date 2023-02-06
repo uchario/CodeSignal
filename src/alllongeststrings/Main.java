@@ -75,9 +75,11 @@ public class Main {
         {
             //length is first index of substring
             //if list has same size strings, add this one
-            if( l.indexOf("-") == s.length() ) l += s + "-";
+            if( l.indexOf("-") == s.length() )
+                l += s + "-";
                 //reset if list has smaller strings
-            else if ( l.indexOf("-") < s.length() ) l = s + "-";
+            else if ( l.indexOf("-") < s.length() )
+                l = s + "-";
         }
 
         return l.split( "-" );
