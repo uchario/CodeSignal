@@ -85,10 +85,6 @@ public class Main {
         for (int i = 0; i < a.length; i++) {if (a[i] != b[i]) {sum++;}}
         Arrays.sort(a);
         Arrays.sort(b);
-<<<<<<< HEAD
         return Arrays.equals(a, b) && sum < 3;
-=======
-        return Arrays.equals(a, b) && sum < 3;}
->>>>>>> origin/master
     }
 }
