@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
-        boolean output = isIpv4Address("1.1.1.1a");
+        boolean output = isIpv4AddressLBYL("1.1.1.1a");
         System.out.println(output);
 //        System.out.println("uche".endsWith("he"));
     }
@@ -22,6 +22,29 @@ public class Main {
             }
         } catch (NumberFormatException e) {
             return false;
+        }
+        System.out.println(Arrays.toString(ipString));
+        return true;
+    }
+
+    public static boolean isIpv4AddressLBYL(String inputString) {
+        String[] ipString = inputString.split("[.]");
+        if(ipString.length != 4) {
+            return false;
+        }
+
+        for(int i = 0; i < ipString.length; i++) {
+            for(int j = 0; j < ipString[i].length(); j++) {
+                if(Character.isAlphabetic(ipString[i].charAt(j))) {
+                    return false;
+                }
+            }
+        }
+
+        for(String i : ipString) {
+            if(i.isEmpty() || (i.length() > 1 && i.charAt(0) == '0') || Integer.parseInt(i) > 255) {
+                return false;
+            }
         }
         System.out.println(Arrays.toString(ipString));
         return true;
