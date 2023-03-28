@@ -5,8 +5,8 @@ import java.util.regex.Pattern;
 
 public class Main {
     public static void main(String[] args) {
-        String alpha = "aabcccdddd", newAlpha = alpha;
-        System.out.println(newAlpha);
+        String alpha = "aabcccdddd";
+        System.out.println(lineEncoding(alpha));
     }
 
     public static String lineEncoding(String s) {
