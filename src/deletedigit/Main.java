@@ -7,6 +7,37 @@ public class Main {
     }
 
     public static int deleteDigit(int n) {
+//        Given some integer, find the maximal number you can obtain by deleting exactly one digit of the given number.
+//
+//                Example
+//
+//        For n = 152, the output should be
+//        solution(n) = 52;
+//        For n = 1001, the output should be
+//        solution(n) = 101.
+//        Input/Output
+//
+//                [execution time limit] 3 seconds (java)
+//
+//                [input] integer n
+//
+//        Guaranteed constraints:
+//        10 ≤ n ≤ 106.
+//
+//                [output] integer
+//
+//                [Java] Syntax Tips
+
+// Prints help message to the console
+// Returns a string
+//
+// Globals declared here will cause a compilation error,
+// declare variables inside the function instead!
+//        String helloWorld(String name) {
+//            System.out.println("This prints to the console when you Run Tests");
+//            return "Hello, " + name;
+//        }
+
         int maxNum = 0;
         StringBuilder sb = new StringBuilder(String.valueOf(n)), copyStrVal = new StringBuilder(sb);
         for (int i = 0; i < sb.length(); i++) {
