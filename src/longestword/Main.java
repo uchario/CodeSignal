@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
-        String text = "Ready, Steady, go!";
+        String text = "ab-CDE-fg_hi";
         System.out.println(longestWord(text));
     }
 
@@ -40,18 +40,17 @@ public class Main {
 //            System.out.println("This prints to the console when you Run Tests");
 //            return "Hello, " + name;
 //        }
-        String[] splitStr = text.split(" "), splitStrCopy = text.split(" ");
-        for(int i = 0; i < splitStr.length; i++) {
-            for(int j = 0; j < splitStr[i].length(); j++) {
-                if(!Character.isAlphabetic(splitStr[i].charAt(j))) {
-                    splitStrCopy[i] = splitStrCopy[i].replace(String.valueOf(splitStr[i].charAt(j)), "");
-                }
+        String textCopy = text;
+        for(int i = 0; i < textCopy.length(); i++) {
+            if(!Character.isAlphabetic(textCopy.charAt(i))) {
+                textCopy = textCopy.replace(String.valueOf(textCopy.charAt(i)), " ");
             }
         }
+        String[] textCopySplit = textCopy.split(" ");
         String maxLen = "";
-        for(int i = 0; i < splitStrCopy.length; i++) {
-            if(splitStrCopy[i].length() > maxLen.length()) {
-                maxLen = splitStrCopy[i];
+        for(int i = 0; i < textCopySplit.length; i++) {
+            if(textCopySplit[i].length() > maxLen.length()) {
+                maxLen = textCopySplit[i];
             }
         }
         return maxLen;
