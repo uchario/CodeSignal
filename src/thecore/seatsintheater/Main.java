@@ -67,6 +67,7 @@ public class Main {
 //        String helloWorld(String name) {
 //            System.out.println("This prints to the console when you Run Tests");
 //            return "Hello, " + name;
+//        added this to enable commit with right message
 //        }
         return (nRows - row) * (nCols - (col - 1));
     }
